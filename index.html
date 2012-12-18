@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="doc/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="doc/css/styleguide.css">
     <link rel="stylesheet" type="text/css" href="release/css/topcoat-min.css">
+    <link rel="stylesheet" type="text/css" href="release/css/topcoat.css">
 </head>
 <body>
 <a href="https://github.com/adobe/topcoat"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:4000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
@@ -25,6 +26,7 @@
             <li><a href="#fonts">Fonts</a></li>
             <li><a href="#colors">Colors</a></li>
             <li><a href="#icons">Icons</a></li>
+            <li><a href="#cursors">Cursors</a></li>			
             <li><a href="#visual-hierarchy">Visual Hierarchy</a></li>
             <li><a href="#spacing">Spacing</a></li>
             <li><a href="#words">Words</a></li>
@@ -223,6 +225,20 @@
                 <li>make the interface visually engaging</li>  
             </ul>
 
+            <h4 id="cursors"><span>Cursors</span></h4>
+			<p>Proper use of cursors are an essential part good OS citizenship. Use default OS cursors whenever possible. Extend the OS cursors when the metaphor is unclear.</p>
+			<h5>Scenarios</h5>
+			<ul>
+				<li>Hand for hyperlinks only</li>
+				<li>Grabber hand only for <a href=#re-sortable>re-sortable lists</a>
+				<li>Pointer in all other cases</li>
+			</ul>
+			<div id="hand">hand standard</div>
+			<ul class"samples">
+				<li id="hand">hand standard</li>
+				<li "hand2x">hand retina</li>
+			</ul>
+            
             <h4 id="visual-hierarchy"><span>Visual Hierarchy</span></h4>
             <p>Visual hierarchy is used to indicate what is important. Primary objects or actions have the highest contrast to their surroundings.</p>
             <h5>Example: TopCoat Button Visual Hierarchy</h5>

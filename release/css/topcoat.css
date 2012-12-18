@@ -1105,3 +1105,12 @@ input.dark[type=checkbox]:checked + label {
   color: #bbb;
 }
 /* End Breadcrumbs */
+/*Placed Icon/Cursor Examples*/
+ul.samples li {
+  float: left;
+  margin-right: 4px;
+  margin-left: -3px;
+}
+.hand {
+  background-image: -webkit-image-set(url(../img/cursor_closed-hand.png) 1 x, url(../img/cursor_closed-hand@2x.png) 2 x);
+}
