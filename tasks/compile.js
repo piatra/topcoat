@@ -51,7 +51,7 @@ module.exports = function(grunt) {
                     files = includes.concat(skinsPath);
 
                 fileData.push({
-                    src:['src/copyright.styl', includes, skinsPath, '!src/skins/**/src/copyright.styl'],
+                    src:['tasks/copyright.styl', includes, skinsPath, '!src/skins/**/src/copyright.styl'],
                     dest: releasePath + fileName.replace('theme-', "")
                 });
 
