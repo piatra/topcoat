@@ -162,6 +162,10 @@ module.exports = function(grunt) {
         watch: {
             files: ['<%= topcoat.options.srcPath %>/**/*.styl'],
             tasks: ['compile']
+        },
+
+        nodeunit: {
+            tests: ['dev/test/*.test.js']
         }
 
     });
@@ -176,6 +180,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-topdoc');
     grunt.loadNpmTasks('grunt-zip');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
     //Load local tasks
     grunt.loadTasks('dev/tasks');
@@ -184,6 +189,8 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['clean', 'topcoat', 'cssmin', 'topdoc', 'copy']);
     grunt.registerTask('release', ['default', 'clean:src']);
     grunt.registerTask('compile', ['topcoat:compile', 'topdoc', 'copy']);
+
+    grunt.registerTask('test', ['nodeunit']);
 
     grunt.registerTask('telemetry', '', function(platform, theme) {
         if (chromiumSrc === "") grunt.fail.warn("Set CHROMIUM_SRC to point to the correct location\n");
