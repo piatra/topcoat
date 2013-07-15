@@ -1,11 +1,11 @@
 {
-	name: "topcoat",
-	repo: "piatra/topcoat",
-	description: "Topcoat",
-	version: "0.5.1",
-	keywords: [
-		"topcoat"
-	],
-	dependencies: { },
-	development: { }
+    "name": "topcoat",
+    "repo": "piatra/topcoat",
+    "description": "Topcoat",
+    "version": "0.5.1",
+    "keywords": [
+        "topcoat"
+    ],
+    "dependencies": {},
+    "development": {}
 }
