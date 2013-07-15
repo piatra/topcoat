@@ -37,16 +37,14 @@ exports.variableTest = {
 
     files.forEach(function (file) {
       var actual = grunt.file.read(file);
-      var match = actual.match(/var-[a-z-]*[a-z]+/g);
+      var match = actual.match(/var-[a-z\-]*[a-z]+/g);
 
       if (match) console.log('\nMissing ' + match.join(', ') + ' in ' + file);
       test.equal(match, null, 'should not have missing vars');
 
-      if (--l == 0) {
-        test.done();
-      }
+    });
 
-    })
+    test.done();
 
   }
 };
