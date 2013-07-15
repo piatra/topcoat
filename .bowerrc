@@ -1,0 +1,9 @@
+{
+  "directory": "Topcoat",
+  "endpoint": "https://bower.mycompany.com",
+  "json": "component.json",
+  "searchpath": [
+    "https://bower.herokuapp.com"
+  ],
+  "shorthand_resolver": "git@github.com:piatra/topcoat.git"
+}
